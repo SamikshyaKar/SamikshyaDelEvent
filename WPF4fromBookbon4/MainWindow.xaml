@@ -1,0 +1,30 @@
+﻿<Window x:Class="WPF4fromBookbon4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF4fromBookbon4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+    ResizeMode ="NoResize" Activated="Window_Activated">
+    <Grid>
+        <Menu HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,0" Background="White">
+            <MenuItem Header="Game">
+                <MenuItem Header="NewGame" Click="NewGame_click"/>
+                <MenuItem Header="New Max Value" Click="MaxValue_Click"/>
+                <Separator/>
+                <MenuItem Header="Exit" Click="Exit_Click"/>
+            </MenuItem>
+            <MenuItem Header="About Game" Click="AboutGame_Click"/>
+        </Menu>
+
+        <Label Content="Enter your Guess"  HorizontalAlignment="Left" VerticalAlignment="Top"   Margin="20,40,0,0"></Label>
+        <TextBox Name="txtName" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="171,40,0,0" Width="50" Height="24"
+                 VerticalContentAlignment="Center"/>
+        <Button Name="BtnOk" Content="ClickOK" HorizontalAlignment="Left" VerticalAlignment="Top"
+        IsDefault="True" Margin="342,44,0,0" Width="50" Click="BtnOk_Click"/>
+        <ListBox Name="lstResult" HorizontalAlignment="Left" VerticalAlignment="Top" Width="230" Height="300"
+         Margin="20,90,0,0"/>
+
+    </Grid>
+</Window>
